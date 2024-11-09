@@ -1,0 +1,96 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff; /* Alice Blue */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Calculator Styling */
+.calculator {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    width: 370px;
+}
+
+/* Display Styling */
+.display {
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    text-align: right;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button Styling */
+.btn {
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Button Colors */
+.btn:nth-child(4n) { background-color: #f39c12; } /* Orange for Operators */
+.btn:nth-child(4n-1) { background-color: #3498db; } /* Blue for Numbers */
+.btn:nth-child(4n-2) { background-color: #2ecc71; } /* Green for Functions */
+.btn:nth-child(4n-3) { background-color: #e74c3c; } /* Red for Trig Functions */
+
+.btn:nth-last-child(1) { background-color: #8e44ad; } /* Purple - Dark Mode */
+.btn:nth-last-child(2) { background-color: #16a085; } /* Teal - Square Root */
+.btn:nth-last-child(3) { background-color: #d35400; } /* Orange - Logarithms */
+.btn:nth-last-child(4) { background-color: #27ae60; } /* Green - Power Functions */
+.btn:nth-last-child(5) { background-color: #c0392b; } /* Red - Pi and E */
+.btn:nth-last-child(6) { background-color: #9b59b6; } /* Purple for x² */
+
+.btn:hover { filter: brightness(1.15); }
+.btn:active { transform: scale(0.95); }
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+.dark-mode input {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.dark-mode .btn {
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+.dark-mode .btn:nth-child(4n) { background-color: #e67e22; }
+.dark-mode .btn:nth-child(4n-1) { background-color: #2980b9; }
+.dark-mode .btn:nth-child(4n-2) { background-color: #27ae60; }
+.dark-mode .btn:nth-child(4n-3) { background-color: #c0392b; }
+.dark-mode .btn:nth-last-child(1) { background-color: #6c3483; }
+.dark-mode .btn:nth-last-child(2) { background-color: #1abc9c; }
+.dark-mode .btn:nth-last-child(3) { background-color: #e74c3c; }
