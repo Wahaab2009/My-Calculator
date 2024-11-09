@@ -19,5 +19,6 @@ function deleteLast() {
 function calculate() {
     const output = document.getElementById('output');
     try {
+        // Replace mathematical functions for evaluation
         let expression = output.value
             .replace(/sin
